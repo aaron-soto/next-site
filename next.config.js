@@ -30,7 +30,7 @@ const ContentSecurityPolicy = `
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';
-  connect-src *;
+  connect-src * vitals.vercel-insights.com;
   font-src 'self';
 `;
 
