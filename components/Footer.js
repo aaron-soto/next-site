@@ -47,7 +47,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="bottom-footer flex flex-col sm:flex-row justify-between w-full">
+      <div className="bottom-footer flex flex-col sm:flex-row justify-between w-full pb-16">
         <p className="text-gray-600 sm: mb-5">
           © 2021 Aaron Soto. All rights reserved.
         </p>
