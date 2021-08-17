@@ -1,0 +1,132 @@
+---
+title: 'Easily Create a React App'
+publishedAt: '2021-07-15'
+tags: ['Javascript', 'react', 'Frontend']
+summary: 'This is some example text to be shown for a blog post preview.'
+image: '/static/images/easily-create-a-react-app/banner.png'
+---
+
+<Image
+  alt={`Norway`}
+  src={`/static/images/easily-create-a-react-app/banner.jpg`}
+  width={1501 / 2}
+  height={712 / 2}
+  priority
+/>
+
+Eveyone has their own setup that they like to use for react apps and there is no required structure that you have to use for every project. That being the case, there is alot of room for thinking about what is or could be the best setup to use. In the end it comes down to what you feel most comfortable with. I will walk you through how I start every project and you can choose to do the same or alter it to your liking.
+
+## Getting Started
+
+We will get started using facebooks' `create-react-app`. I find it wasy to use this tool to get all of the grunt work out of the way and then alter what is created to our liking.
+
+<Image
+  alt={`Norway`}
+  src={`/static/images/easily-create-a-react-app/explorer.png`}
+  width={614}
+  height={442}
+/>
+
+Create a folder in the directory of your choice and name that folder what you want your app name to be. Open that folder in vscode. I like to right click the folder or inside the folder and click `Open with Code`.
+
+click `Terminal` in the toolbar then `New Terminal`. In the new terminal run
+
+```shell:Terminal
+npx create-react-app ./
+```
+
+Running `create-react-app` with `./` creates the app in the curent folder. I like to do this so I never have to think about where the folder will end up. Just like any react video you have watched before, Ill see you back here when its done installing the app!
+
+<Image
+  alt={`Norway`}
+  src={`/static/images/easily-create-a-react-app/file-structure.png`}
+  width={431}
+  height={873}
+/>
+
+Above is what you should have once it is done installing. I like to go ahead and at this point strip this folder structure down to its bare bones.
+
+Since in this example I will be making a small react app with a few small components, almost everything is not needed.
+
+## What to delete
+
+I start by removing the following files
+
+```shell
+favicon.ico
+logo192.png
+logo512.png
+manifest.json
+robots.txt
+
+App.test.js
+logo.svg
+reportWebVitals.js
+setupTests.js
+```
+
+```jsx:index.js
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+);
+```
+
+```jsx:App.js
+import "./App.css";
+
+function App() {
+    return (
+        <div className='App'>
+            <h2>My React App</h2>
+        </div>
+    );
+}
+
+export default App;
+```
+
+```html:index.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+        <title>My App</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>
+```
+
+Now that you have updated the files you should be able to start the application if you haven't already done so. Do this by running
+
+```shell
+npm start
+```
+
+Running `npm start` should give you the following application.
+
+<Image
+  alt={`Norway`}
+  src={`/static/images/easily-create-a-react-app/final-app.png`}
+  width={1136 / 2}
+  height={595 / 2}
+/>
+
+## That's it!
+
+With that that is a basic boilerplate for create-react-app that I like to do everytime I create a new application. This type of project setup might not be ideal for production level apps but this is a good starting point for any quick projects you may be creating when learning react and or experimenting with things. I hope you were able to pick up something to speed up your workflow when creating new apps. Again, feel free to alter any code here you would like. Thank you for making it this far! Happy learning!

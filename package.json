@@ -6,15 +6,43 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .js --ext .json"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@next/mdx": "^11.1.0",
+    "@tailwindcss/typography": "^0.4.1",
+    "date-fns": "^2.23.0",
+    "globby": "^11.0.4",
+    "gray-matter": "^4.0.3",
+    "mdx-bundler": "^6.0.1",
     "next": "11.1.0",
+    "next-themes": "^0.0.15",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "reading-time": "^1.4.0",
+    "rehype": "^12.0.0",
+    "rehype-autolink-headings": "^6.0.0",
+    "rehype-code-titles": "^1.0.3",
+    "rehype-prism-plus": "^0.0.5",
+    "rehype-slug": "^5.0.0",
+    "remark-gfm": "^2.0.0",
+    "rss": "^1.2.2",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
+    "eslint-config-next": "11.1.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.7"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }
