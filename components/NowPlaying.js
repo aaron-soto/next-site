@@ -40,6 +40,7 @@ export default function NowPlaying() {
           {data?.artist ?? 'Spotify'}
         </p>
       </div>
+      <div className="spacer h-10 md:hidden"></div>
     </div>
   );
 }
