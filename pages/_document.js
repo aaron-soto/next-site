@@ -14,11 +14,11 @@ class MyDocument extends Document {
           />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
-          {/* <link
+          <link
             rel="preconnect"
             href="https://cdn.usefathom.com"
             crossOrigin=""
-          /> */}
+          />
           <link
             href="/static/favicons/apple-touch-icon.png"
             rel="apple-touch-icon"
