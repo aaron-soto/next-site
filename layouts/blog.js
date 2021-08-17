@@ -17,7 +17,7 @@ export default function BlogLayout({ children, frontMatter }) {
           {frontMatter.title}
         </h1>
 
-        <div className="flex justify-center items-center w-full mb-5">
+        <div className="flex justify-center items-center w-full max-w-4xl mb-5">
           {frontMatter.tags.map((tag) => (
             <a className="text-black dark:text-gray-300 px-3 py-1 bg-gray-100 dark:bg-gray-900 rounded-lg mx-2 cursor-pointer">
               {tag}
