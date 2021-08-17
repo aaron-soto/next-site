@@ -6,6 +6,15 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          '0%': { left: '100%' },
+          '100%': { left: '-100%' }
+        }
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite'
+      },
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',
         'spotify-bg': '#181818',
