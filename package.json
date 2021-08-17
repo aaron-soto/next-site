@@ -15,6 +15,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "date-fns": "^2.23.0",
     "dotenv": "^10.0.0",
+    "fathom-client": "^3.1.0",
     "globby": "^11.0.4",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^6.0.1",
