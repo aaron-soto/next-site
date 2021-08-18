@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Aaron Soto]]></title>
+        <description><![CDATA[Aaron Soto]]></description>
+        <link>https://aaronsoto.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 18 Aug 2021 00:06:11 GMT</lastBuildDate>
+        <atom:link href="https://aaronsoto.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Easily Create a React App]]></title>
+            <description><![CDATA[This is some example text to be shown for a blog post preview.]]></description>
+            <link>https://aaronsoto.io/blog/easily-create-a-react-app</link>
+            <guid isPermaLink="true">https://aaronsoto.io/blog/easily-create-a-react-app</guid>
+            <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why You Should Attend a Coding Bootcamp]]></title>
+            <description><![CDATA[This is some example text to be shown for a blog post preview.]]></description>
+            <link>https://aaronsoto.io/blog/why-you-should-attend-a-coding-bootcamp</link>
+            <guid isPermaLink="true">https://aaronsoto.io/blog/why-you-should-attend-a-coding-bootcamp</guid>
+            <pubDate>Sun, 18 Jul 2021 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
