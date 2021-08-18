@@ -1,17 +1,18 @@
-import { writeFileSync } from 'fs';
-import { globby } from 'globby';
-import prettier from 'prettier';
+import { writeFileSync } from 'fs'
+import pkg from 'globby'
+const { globby } = pkg
+import prettier from 'prettier'
 
 async function generate() {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
+  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
     'pages/*.js',
     'data/**/*.mdx',
     '!data/*.mdx',
     '!pages/_*.js',
     '!pages/api',
-    '!pages/404.js'
-  ]);
+    '!pages/404.js',
+  ])
 
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
@@ -22,26 +23,26 @@ async function generate() {
               .replace('pages', '')
               .replace('data', '')
               .replace('.js', '')
-              .replace('.mdx', '');
-            const route = path === '/index' ? '' : path;
+              .replace('.mdx', '')
+            const route = path === '/index' ? '' : path
 
             return `
               <url>
                   <loc>${`https://aaronsoto.io${route}`}</loc>
               </url>
-            `;
+            `
           })
           .join('')}
     </urlset>
-    `;
+    `
 
   const formatted = prettier.format(sitemap, {
     ...prettierConfig,
-    parser: 'html'
-  });
+    parser: 'html',
+  })
 
   // eslint-disable-next-line no-sync
-  writeFileSync('public/sitemap.xml', formatted);
+  writeFileSync('public/sitemap.xml', formatted)
 }
 
-generate();
+generate()
