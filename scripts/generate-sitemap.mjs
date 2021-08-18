@@ -2,6 +2,7 @@ import { writeFileSync } from 'fs'
 import pkg from 'globby'
 const { globby } = pkg
 import prettier from 'prettier'
+const unixify = require('unixify')
 
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
@@ -24,7 +25,7 @@ async function generate() {
               .replace('data', '')
               .replace('.js', '')
               .replace('.mdx', '')
-            const route = path === '/index' ? '' : path
+            const route = path === '/index' ? '' : unixify(path)
 
             return `
               <url>
