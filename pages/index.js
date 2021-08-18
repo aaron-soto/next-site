@@ -27,12 +27,12 @@ export default function Home({}) {
 
         <BlogPostCard
           title="easily Create a React App"
-          summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
+          summary="I walk through my setup of a fast and easy to use setup using the facebook tool create-react-app. With a few minor changes it can be ready for any project."
           slug="easily-create-a-react-app"
         />
         <BlogPostCard
           title="Why You Should Attend a Coding Bootcamp"
-          summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
+          summary="People are always asking if they should attend a coding bootcamp. I had the same question until I finally did it and it was no longer a question and I was glad that I had done it."
           slug="why-you-should-attend-a-coding-bootcamp"
         />
 
