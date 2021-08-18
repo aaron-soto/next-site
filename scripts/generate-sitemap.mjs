@@ -2,7 +2,7 @@ import { writeFileSync } from 'fs'
 import pkg from 'globby'
 const { globby } = pkg
 import prettier from 'prettier'
-const unixify = require('unixify')
+import unixify from 'unixify'
 
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
