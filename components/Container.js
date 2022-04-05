@@ -52,7 +52,7 @@ export default function Container(props) {
         <div>
           <NextLink href="/">
             <a
-              className={`p-1 text-gray-900 sm:p-4 dark:text-gray-100 ${
+              className={`p-2 text-gray-900 sm:p-8 dark:text-gray-100 ${
                 router.pathname == '/' ? 'active' : ''
               }`}
             >
@@ -61,7 +61,7 @@ export default function Container(props) {
           </NextLink>
           <NextLink href="/blog">
             <a
-              className={`p-1 text-gray-900 sm:p-4 dark:text-gray-100 ${
+              className={`p-2 text-gray-900 sm:p-4 dark:text-gray-100 ${
                 router.pathname == '/blog' ? 'active' : ''
               }`}
             >
@@ -70,7 +70,7 @@ export default function Container(props) {
           </NextLink>
           <NextLink href="/projects">
             <a
-              className={`p-1 text-gray-900 sm:p-4 dark:text-gray-100 ${
+              className={`p-2 text-gray-900 sm:p-4 dark:text-gray-100 ${
                 router.pathname == '/projects' ? 'active' : ''
               }`}
             >
@@ -79,7 +79,7 @@ export default function Container(props) {
           </NextLink>
           <NextLink href="/about">
             <a
-              className={`p-1 text-gray-900 sm:p-4 dark:text-gray-100 ${
+              className={`p-2 text-gray-900 sm:p-4 dark:text-gray-100 ${
                 router.pathname == '/about' ? 'active' : ''
               }`}
             >
