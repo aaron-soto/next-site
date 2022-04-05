@@ -36,6 +36,13 @@ export default function Home({}) {
           slug="why-you-should-attend-a-coding-bootcamp"
         />
 
+        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+          Currently Playing
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          This is what I am listening to right now while I am probably either
+          working out or coding!
+        </p>
         <NowPlaying />
 
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">

@@ -6,8 +6,8 @@ export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', fetcher);
 
   return (
-    <div className=" py-2 flex flex-row-reverse sm:flex-row space-x-0 sm:space-x-2 w-full ">
-      <div className="svg-wrapper  pr-3 rounded-full flex">
+    <div className="fixed bottom-0 left-0 px-10 py-2 flex flex-row-reverse sm:flex-row space-x-0 sm:space-x-2 w-full bg-spotify-bg">
+      <div className="svg-wrapper bg-spotify-bg px-3 z-50 rounded-full flex">
         <svg className="h-4 w-4 m-auto " viewBox="0 0 168 168">
           <path
             fill="#1ED760"
@@ -15,14 +15,14 @@ export default function NowPlaying() {
           />
         </svg>
       </div>
-      <div className="inline-flex flex-row w-full max-w-full ">
+      <div className="inline-flex flex-row w-full max-w-full truncate  absolute animate-marquee float-left">
         {data?.songUrl ? (
           <>
-            <span className="mr-2 text-gray-300 dark:text-gray-300">
+            <span className="mr-2 text-gray-500 dark:text-gray-300">
               Now Playing |{' '}
             </span>
             <a
-              className="text-gray-500 dark:text-gray-200 font-medium  max-w-max truncate "
+              className="text-gray-100 dark:text-gray-200 font-medium  max-w-max truncate "
               href={data.songUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export default function NowPlaying() {
             </a>
           </>
         ) : (
-          <p className="text-gray-800 dark:text-gray-300 font-medium">
+          <p className="text-gray-800 dark:text-gray-200 font-medium">
             Not Playing
           </p>
         )}
