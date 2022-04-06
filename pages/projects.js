@@ -39,7 +39,9 @@ export default function About() {
             <div className="border-gray-100 lg:border-t lg:border-gray-100 bg-white dark:bg-slate-900 rounded-b lg:rounded-b-none lg:rounded-r px-4 py-2 flex flex-col justify-between leading-normal">
               <div className="mt-5">
                 <div className="text-gray-900 font-bold text-xl mb-2">
-                  Flip Clock Work Counter
+                  <div className="text-gray-900 font-bold text-xl mb-2">
+                    Flip Clock Work Counter
+                  </div>
                 </div>
                 <p className="text-gray-700 text-base">
                   My desk setup has an Ipad that sits in a dock and I wanted an
