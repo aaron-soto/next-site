@@ -43,14 +43,14 @@ export default function Home({}) {
           </Link>
         </h2>
 
-        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+        {/* <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           My Toolbox and Things I can do
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           The skills, tools and technologies I use to bring your products to
           life:
-        </p>
-        <div className=" flex text-6xl flex-row mt-10 mb-10">
+        </p> */}
+        {/* <div className="w-full flex text-6xl flex-row mt-10 mb-10">
           <FaHtml5 className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
           <FaCss3Alt className="flex-1 mx-4 text-gray-600 hover:text-yellow-500 transition ease-in-out duration-500" />
           <SiJavascript className="flex-1 mx-4 text-gray-600 hover:text-yellow-200 transition ease-in-out duration-500" />
@@ -60,7 +60,7 @@ export default function Home({}) {
           <FaGithub className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
           <AiFillApi className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
         </div>
-        <div className=" flex text-6xl flex-row mb-10 ">
+        <div className="w-full flex text-6xl flex-row mb-10 ">
           <SiFirebase className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500 " />
           <FaSass className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
           <VscTerminalCmd className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
@@ -69,7 +69,7 @@ export default function Home({}) {
           <FiFigma className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
           <SiWebflow className="flex-1 mx-4 text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" />
           <SiAdobe className="flex-1 mx-4 text-gray-600 hover:text-red-500 transition ease-in-out duration-500" />
-        </div>
+        </div> */}
 
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Most Popular
